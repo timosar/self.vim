@@ -109,7 +109,7 @@ i = 1.
 ] loop. "loop executes the block forever."
 
 
-"prototype inheritance. with inheritance you can delegate methods from one object to its parent."
+"prototype inheritance. with inheritance you can delegate methods from one object to its child."
 animal = (|
   speak = (
     'hello' printLine
@@ -117,7 +117,7 @@ animal = (|
 |)
 
 dog = (|
-  parent* = object1.
+  parent* = object1. "dog now has the speak method of animal."
   bark = (
     'woof' printLine
   ).
